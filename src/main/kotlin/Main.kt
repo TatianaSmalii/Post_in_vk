@@ -18,11 +18,11 @@ data class Likes (
     var likes: Int = 0
 )
 
-object WallService {//синглтон //сервис отвечающий за публикацию постов
+class WallService {//синглтон //сервис отвечающий за публикацию постов
     var posts = emptyArray<Post>()//создаем массив
     var counterId=0
 
-    fun add(post: Int): Post {//добавление нового поста
+    fun add(post: Post): Post {//добавление нового поста
 
         posts += post.copy(id = counterId ++)
         return posts.last()
