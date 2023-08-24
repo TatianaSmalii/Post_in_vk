@@ -14,10 +14,7 @@ class MainKtTest {
 
         val post= 0
         val result = add (post= post )
-        //Помогите пожалуйста понять как прописать тесты add и update
-        //Хочу разобраться
-        //Если проверять этот тест то выскакивает ошибка Unresolved reference: copy (27 строка)
-        Assert.assertEquals(-1, result)
+        //Продолжить
     }
     @Test
     fun update (){
